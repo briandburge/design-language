@@ -1,4 +1,4 @@
-version: 1.0.0
+version: 1.0.1
 rules:
   - id: DL-001
     category: capitalization
@@ -225,3 +225,8 @@ rules:
     title: "Outcome integrity"
     severity: error
     specification: "Use measured outcomes when available and observable outcomes when measurement is unavailable."
+  - id: DL-120
+    category: audit
+    title: "Respect audit scope"
+    severity: error
+    specification: "Evaluate only the requested scope unless the user explicitly expands it."

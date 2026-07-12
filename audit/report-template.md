@@ -1,5 +1,12 @@
 # Design Language audit
 
+## Audit scope
+
+- Source:
+- Scope:
+- Pages reviewed:
+- Navigation followed:
+
 ## Summary
 
 - Version:
