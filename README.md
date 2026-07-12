@@ -23,4 +23,32 @@ Markdown explains the system. Structured data defines it. Adapters distribute it
 
 ## Version
 
-Current version: `1.0.0`
+Current version: `1.0.1`
+
+
+## Audit philosophy
+
+Design Language separates evaluation from transformation.
+
+An audit identifies issues.
+
+A rewrite is a separate operation requested by the user.
+
+Every website audit reports the scope that was evaluated.
+
+## Project direction
+
+- `docs/vision.md` defines the long-term direction.
+- `docs/project-charter.md` defines how the project operates.
+- `docs/non-goals.md` defines what DSL is not.
+- `docs/sprint-1.md` preserves the active sprint.
+- `docs/custom-gpt-release-process.md` keeps the Custom GPT aligned with each release.
+
+
+## Design Language Auditor
+
+Public GPT:
+
+https://chatgpt.com/g/g-6a52996c067481919f69cde33a25b22d-design-language-auditor
+
+The GPT should be updated alongside every DSL release following `docs/custom-gpt-release-process.md`.
