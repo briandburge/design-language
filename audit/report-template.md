@@ -42,6 +42,7 @@ Include this section only for AI writing-pattern audits.
 ### [Rule ID] Rule title
 
 - Severity:
+- Plain-language rule:
 - Location:
 - Found:
 - Why it matters:
@@ -50,6 +51,14 @@ Include this section only for AI writing-pattern audits.
 ## Patterns
 
 Summarize repeated issues across the content.
+
+## Rule reference
+
+List only the rules cited in this audit. Include each rule ID, title, and plain-language meaning.
+
+Readable reference: https://github.com/briandburge/design-system-language/blob/main/docs/rule-reference.md
+
+Do not link users to the raw YAML unless they explicitly request the machine-readable registry.
 
 ## Priorities
 

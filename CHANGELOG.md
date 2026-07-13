@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Required the human-authorship signal score whenever users ask about AI or human writing indicators.
+- Added a human-readable rule reference and user-facing cited-rule summaries.
+
 - Added a directional human-authorship signal score for AI writing-pattern audits.
 - Expanded AI-pattern checks to include em dashes under DL-011 and repetition under DL-054.
 

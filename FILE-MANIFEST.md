@@ -31,6 +31,7 @@
 - `docs/non-goals.md`
 - `docs/project-charter.md`
 - `docs/project-context.md`
+- `docs/rule-reference.md`
 - `docs/roadmap.md`
 - `docs/sprint-1.md`
 - `docs/vision.md`

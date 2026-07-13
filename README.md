@@ -51,4 +51,8 @@ Public GPT:
 
 https://chatgpt.com/g/g-6a52996c067481919f69cde33a25b22d-design-language-auditor
 
+## Rule reference
+
+Use [`docs/rule-reference.md`](docs/rule-reference.md) for a readable list of rule IDs, titles, severity levels, and plain-language meanings. The canonical machine-readable registry remains [`rules/rules.yaml`](rules/rules.yaml).
+
 The GPT should be updated alongside every DSL release following `docs/custom-gpt-release-process.md`.
