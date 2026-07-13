@@ -27,8 +27,11 @@
 - Updated the displayed DSL version and GPT instructions to 1.0.1.
 - Added explicit single-page, navigation-crawl, and entire-site scope behavior.
 - Confirmed that a single supplied URL does not trigger internal-link traversal or public search.
+- Added the no-auth Rendered URL Reader Action for JavaScript-dependent public pages.
+- Added retrieval fallback, scope-control, privacy-disclosure, and failure-handling instructions.
+- Confirmed that the Action retrieves substantive rendered copy without following links outside the requested scope.
 - Retained the existing audit-mode conversation starters.
-- Known limitation: website coverage still depends on available web access and pages reachable within the user-requested scope.
+- Known limitation: the Reader Action is subject to third-party availability, rate limits, access controls, and incomplete retrieval on some pages.
 - Public GPT: https://chatgpt.com/g/g-6a52996c067481919f69cde33a25b22d-design-language-auditor
 
 ## 1.0.0
