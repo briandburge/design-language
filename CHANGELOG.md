@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Added an architecture diagram connecting the repository, knowledge bundle, Custom GPT, and rendered URL reader.
+- Added the complete version-controlled Design Language Auditor GPT 1.0.1 configuration.
+
 - Renamed the GitHub repository from `design-system-language` to `design-language`.
 - Refreshed the Design Language Auditor knowledge bundle and instructions with the new repository URL.
 
