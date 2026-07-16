@@ -18,7 +18,7 @@ Compare changes to:
 
 ## Knowledge bundle
 
-Regenerate and replace all five files for every release:
+Regenerate and replace all five files for every release. Store the published files under `gpt/versions/<version>/knowledge/`:
 
 - `dsl-rules.yaml`
 - `dsl-specification.md`
@@ -32,6 +32,8 @@ Update GPT instructions whenever audit behavior, scope handling, scoring, report
 
 Review conversation starters for every new capability.
 
+Store the exact published instructions, conversation starters, action schema, and release metadata under `gpt/versions/<version>/`.
+
 ## Release checklist
 
 1. Update the displayed DSL version.
@@ -42,8 +44,9 @@ Review conversation starters for every new capability.
 6. Confirm valid rule IDs.
 7. Confirm the GPT does not rewrite during an audit.
 8. Confirm the GPT reports its actual scope.
-9. Publish the GPT update.
-10. Record the GPT release in `CHANGELOG.md`.
+9. Store the exact published GPT configuration under `gpt/versions/<version>/`.
+10. Publish the GPT update.
+11. Record the GPT release in `CHANGELOG.md`.
 
 ## Release record
 

@@ -17,6 +17,32 @@ Use the audit prompts in `audit/prompts/` with a document, website, interface, p
 - `examples/` shows preferred and discouraged patterns.
 - `decisions/` records why important rules exist.
 
+## How the repository and GPT work together
+
+```mermaid
+flowchart LR
+    Repo["Design Language repository"]
+
+    Repo --> Rules["Rules and terms<br/>Canonical definitions"]
+    Repo --> Spec["Specifications<br/>Human-readable guidance"]
+    Repo --> Audit["Audit prompts and rubric"]
+    Repo --> Examples["Writing examples"]
+
+    Rules --> Bundle["Versioned GPT<br/>knowledge bundle"]
+    Spec --> Bundle
+    Audit --> Bundle
+    Examples --> Bundle
+
+    Bundle --> GPT["Design Language Auditor<br/>Custom GPT"]
+    Website["Public website or URL"] --> Reader["Rendered URL Reader<br/>JavaScript-capable retrieval"]
+    Reader --> GPT
+    Document["Document or pasted content"] --> GPT
+
+    GPT --> Report["Design Language audit<br/>Findings, rule IDs, scope,<br/>and human-authorship signals"]
+```
+
+The repository is the source of truth. Each GPT release stores its published instructions, conversation starters, action schema, and knowledge files under [`gpt/`](gpt/).
+
 ## Core principle
 
 Markdown explains the system. Structured data defines it. Adapters distribute it.
@@ -43,6 +69,7 @@ Every website audit reports the scope that was evaluated.
 - `docs/non-goals.md` defines what DSL is not.
 - `docs/sprint-1.md` preserves the active sprint.
 - `docs/custom-gpt-release-process.md` keeps the Custom GPT aligned with each release.
+- `gpt/README.md` documents the published GPT configuration and version history.
 
 
 ## Design Language Auditor

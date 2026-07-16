@@ -1,0 +1,39 @@
+openapi: 3.1.0
+info:
+  title: Rendered URL Reader
+  description: Retrieves a public URL as clean Markdown, including content from many JavaScript-rendered pages.
+  version: 1.0.0
+servers:
+  - url: https://r.jina.ai
+paths:
+  /:
+    post:
+      operationId: readRenderedUrl
+      summary: Retrieve a public web page as Markdown
+      description: Use this for the exact URL supplied by the user when normal web retrieval is incomplete, JavaScript-only, or returns a fallback page. Do not change the requested audit scope or discover unrelated URLs.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - url
+              properties:
+                url:
+                  type: string
+                  format: uri
+                  description: The exact public HTTP or HTTPS URL to retrieve.
+      responses:
+        "200":
+          description: Rendered page content in Markdown
+          content:
+            text/plain:
+              schema:
+                type: string
+        "400":
+          description: Invalid URL or request
+        "429":
+          description: Reader rate limit reached
+        "500":
+          description: Reader could not retrieve the page

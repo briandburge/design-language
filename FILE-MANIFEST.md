@@ -38,6 +38,16 @@
 - `examples/avoid.md`
 - `examples/preferred.md`
 - `examples/transformations.md`
+- `gpt/README.md`
+- `gpt/versions/v1.0.1/README.md`
+- `gpt/versions/v1.0.1/conversation-starters.md`
+- `gpt/versions/v1.0.1/instructions.md`
+- `gpt/versions/v1.0.1/knowledge/dsl-audit-guide.md`
+- `gpt/versions/v1.0.1/knowledge/dsl-examples.md`
+- `gpt/versions/v1.0.1/knowledge/dsl-rules.yaml`
+- `gpt/versions/v1.0.1/knowledge/dsl-specification.md`
+- `gpt/versions/v1.0.1/knowledge/dsl-terms.yaml`
+- `gpt/versions/v1.0.1/rendered-url-action.openapi.yaml`
 - `rules/rules.yaml`
 - `rules/terms.yaml`
 - `schemas/rules.schema.json`
