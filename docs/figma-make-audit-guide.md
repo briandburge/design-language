@@ -385,6 +385,12 @@ Do not assume files in a Make project automatically synchronize with GitHub. Whe
 
 You can upload the five knowledge files into the `guidelines` folder instead, because Figma supports multiple Markdown guideline files. However, attaching them per audit is recommended for this workflow because it makes the selected version explicit and reduces the chance of silently auditing against an outdated rule set.
 
+If you choose the persistent option, create a `design-language-audit` folder inside `guidelines` for the five knowledge files. Keep the audit protocol file, `design-language-audit.md`, directly inside `guidelines` alongside Figma Make's existing `Guidelines.md` file.
+
+![Figma Make file browser showing the Design Language audit files organized inside the guidelines folder](../assets/figma-make-persistent-setup.png)
+
+In this example, the five versioned knowledge files are grouped together while the persistent audit protocol remains easy to find and update.
+
 ### Step 4: Test the persistent setup
 
 Attach the five knowledge files and send this small verification prompt before requesting a full audit:
